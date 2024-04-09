@@ -1,9 +1,12 @@
 import requests
 import time
-import json
+from config import load_config
 
-with open('config.json') as f:
-    data = json.load(f)
+
+config = load_config('.env')
+
+BOT_TOKEN = config.tg_bot.token           # Сохраняем токен в переменную bot_token
+superadmin = config.tg_bot.admin_ids[0]   # Сохраняем ID админа в переменную superadmin
 
 
 API_URL = 'https://api.telegram.org/bot'
