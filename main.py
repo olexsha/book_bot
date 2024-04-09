@@ -1,6 +1,6 @@
 import requests
 import time
-from config import load_config
+from config_data.config import load_config
 
 
 config = load_config('.env')
@@ -11,7 +11,6 @@ superadmin = config.tg_bot.admin_ids[0]   # Сохраняем ID админа �
 
 API_URL = 'https://api.telegram.org/bot'
 API_CATS_URL = 'https://api.thecatapi.com/v1/images/search'
-BOT_TOKEN = data['bot_token']['token']
 TEXT = 'Ура! Классный апдейт!'
 MAX_COUNTER = 100
 
