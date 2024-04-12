@@ -1,4 +1,6 @@
-LEXICON_RU: dict[str, str] = {
+from typing import Dict
+
+LEXICON_RU: Dict[str, str] = {
     '/start': '<b>Привет!</b>\nДавай с тобой сыграем в игру '
               '"Камень, ножницы, бумага"?\n\nЕсли ты, вдруг, '
               'забыл правила, команда /help тебе поможет!\n\n<b>Играем?</b>',
@@ -18,7 +20,14 @@ LEXICON_RU: dict[str, str] = {
     'no': 'Жаль...\nЕсли захочешь сыграть, просто разверни '
           'клавиатуру и нажми кнопку "Давай!"',
     'bot_won': 'Я победил!\n\nСыграем еще?',
-    'user_won': 'Ты победил! Поздравляю!\n\nДавай сыграем еще?',
+    'user_won': 'Ты победил, пидор! Поздравляю!\n\nДавай сыграем еще?',
     'nobody_won': 'Ничья!\n\nПродолжим?',
     'bot_choice': 'Мой выбор'
+}
+
+LEXICON_COMMANDS_RU: Dict[str, str] = {
+    '/command_1': 'command_1 desription',
+    '/command_2': 'command_2 desription',
+    '/command_3': 'command_3 desription',
+    '/command_4': 'command_4 desription'
 }
